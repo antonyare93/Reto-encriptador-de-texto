@@ -51,9 +51,6 @@ function encriptar() {
 
 function desencriptar() {
     let texto = document.getElementById("texto").value;
-    /* let textoDesencriptado = texto.replaceAll("enter", "e").replaceAll("ufat", "u").
-    replaceAll("ober", "o").replaceAll("imes", "i").
-    replaceAll("ai", "a");*/
     let textoDesencriptado = ""
     let validacion = []
     for (let i = 0; i < texto.length; i++) {
