@@ -10,24 +10,33 @@
     <script src="encrypt.js"></script>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-
-</header>
 <main>
-    <div>
-        <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
-        <input type="button" value="Encriptar" onclick="encriptar()">
-        <input type="button" value="Desencriptar" onclick="desencriptar()">
-    </div>
-    <div class="respuesta">
-        <div id="resultado">
-            Resultado
+    <div class="col col1">
+        <div class="logo">
+            <img src="imagenes/logo.svg" alt="Logo de Alura">
         </div>
-        <input type="button" value="Copiar a portapapeles" onclick="copyClipboard()">
+        <div class="interaccion">
+            <textarea name="texto" id="texto" cols="30" rows="10">Ingrese el texto aquí</textarea>
+            <input class="blue-btn" type="button" value="Encriptar" onclick="encriptar()">
+            <input type="button" value="Desencriptar" onclick="desencriptar()">
+        </div>
     </div>
+
+    <div class="col col2">
+        <div class="respuesta">
+            <div id="resultado">
+                Resultado
+            </div>
+            <input type="button" value="Copiar" onclick="copyClipboard()">
+        </div>
+    </div>
+
 </main>
+
 <footer>
     2024 &copy; - Antony Arévalo
 </footer>
